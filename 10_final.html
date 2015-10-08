@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    <script type="text/javascript">
+      function draw2(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries(null, dimple.plot.bar);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+		function draw3(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries("stage", dimple.plot.bar);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+		function draw4(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries(null, dimple.plot.line);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+		function draw5(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries(null, dimple.plot.scatter);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+		function draw6(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries(null, dimple.plot.scatter);
+		  myChart.addSeries(null, dimple.plot.line);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+		function draw7(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries("stage", dimple.plot.line);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+			
+		function draw8(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries("stage", dimple.plot.scatter);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+		function draw9(data) {
+	  
+          "use strict";
+          var margin = 75,
+              width = 700 - margin,
+              height = 300 - margin;
+			  
+		  debugger;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+
+          var myChart = new dimple.chart(svg, data);
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+		  x.dateParseFormat = "%Y";
+		  x.tickFormat = "%Y";
+		  x.timeInterval = 4;
+          myChart.addSeries("stage", dimple.plot.scatter);
+		  myChart.addSeries("stage", dimple.plot.line);
+		  myChart.addLegend(240,0,330,20,"left");
+          myChart.draw();
+        };
+		
+      </script>
+  </head>
+<body>
+  <script type="text/javascript">
+  /*
+    Use D3 (not dimple.js) to load the TSV file
+    and pass the contents of it to the draw function
+    */
+  d3.tsv("world_cup.tsv", draw2);
+  d3.tsv("world_cup.tsv", draw3);
+  d3.tsv("world_cup.tsv", draw4);
+  d3.tsv("world_cup.tsv", draw7);
+  d3.tsv("world_cup.tsv", draw5);
+  d3.tsv("world_cup.tsv", draw8);
+  d3.tsv("world_cup.tsv", draw6);
+  d3.tsv("world_cup.tsv", draw9);
+  
+  </script>
+</body>
+</html>
